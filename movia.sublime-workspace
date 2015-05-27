@@ -1,0 +1,555 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"con",
+				"conIndex"
+			],
+			[
+				"getT",
+				"getTimeLeft"
+			],
+			[
+				"time",
+				"timeLeft"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bus",
+				"busNumber"
+			],
+			[
+				"getBus",
+				"getBusNumber"
+			],
+			[
+				"get",
+				"getBusNumber"
+			],
+			[
+				"new",
+				"newBus"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"toggl",
+				"toggleTrasport"
+			],
+			[
+				"togg",
+				"toggleTrasport"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ret",
+				"returnTransport"
+			],
+			[
+				"tra",
+				"transport"
+			],
+			[
+				"sh",
+				"showTransport"
+			],
+			[
+				"tran",
+				"transportFactory"
+			],
+			[
+				"sho",
+				"showMetro"
+			],
+			[
+				"retu",
+				"return"
+			],
+			[
+				"show",
+				"showTog"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"return",
+				"returnTransport"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"M",
+				"Medium"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"to",
+				"toISOString"
+			],
+			[
+				"angular",
+				"angular-toArrayFilter"
+			],
+			[
+				"line",
+				"lineType"
+			],
+			[
+				"l",
+				"lineDesignation"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"AtB",
+				"AtBRegular"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"pr",
+				"promise"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 4590,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 7194,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/getbus.js",
+			"settings":
+			{
+				"buffer_size": 470,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "css ",
+		"selected_items":
+		[
+			[
+				"css ",
+				"Format CSS: Expanded"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"beaut",
+				"Javascript Beautify"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/moviabus/app/views/main.html",
+		"/C/moviabus/app/scripts/controllers/main.js",
+		"/C/moviabus/app/styles/main.css",
+		"/C/moviabus/app/scripts/services/getbus.js",
+		"/C/moviabus/Gruntfile.js",
+		"/C/moviabus/app/scripts/app.js",
+		"/C/Users/igr/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/igr/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/moviabus/app/index.html",
+		"/C/moviabus/app/scripts/controllers/about.js",
+		"/C/moviabus/bower_components/angular-socket-io/socket.js",
+		"/C/Users/igr/AppData/Roaming/Sublime Text 3/Packages/User/JavascriptBeautify.sublime-settings",
+		"/C/Users/igr/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/C/Users/igr/AppData/Roaming/Sublime Text 3/Installed Packages/Javascript Beautify.sublime-package",
+		"/C/moviabus/app/views/about.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"businfo",
+			"h2",
+			"transport-head",
+			"conne",
+			"window",
+			"h1",
+			";\n",
+			"track",
+			" \n",
+			"S-bus",
+			"even",
+			"stop",
+			"trans",
+			"display-bo",
+			"button",
+			"am-time-ago=\"\"",
+			"display-head",
+			"display-body",
+			"white",
+			"UTC",
+			" );",
+			"						  \n",
+			"console",
+			"{\n",
+			"navbar",
+			"bus-number",
+			"form-",
+			"nav",
+			"border",
+			"border-top",
+			"transc",
+			"container",
+			"main",
+			"%;\n",
+			"'use strict';\n\n/**\n * @ngdoc function\n * @name moviabusApp.controller:MainCtrl\n * @description\n * # MainCtrl\n * Controller of the moviabusApp\n */\nangular.module('moviabusApp')\n\n.filter('checkType', function($moment) {\n	return function(connections, type) {\n		var out = [];\n		if (!connections) {\n			return;\n		}\n		var now = new Date();\n		//console.log('N: '+now.toISOString());\n		now = Date.parse(now);\n		//var n = now.split(\".\");\n		//console.log(n[0]);\n		for (var i = 0; i < connections.length; i++) {\n			var lineType, time, mins, regEx, l, des;\n			if (connections[i].transportType === type) {\n				switch (connections[i].transportType) {\n					case 'BUS':\n						des = connections[i].lineDesignation;\n						l = des.length;\n						lineType = des.slice(des.length - 1);\n						regEx = new RegExp(/[0-9]/gi);\n						if (regEx.test(lineType) === true) {\n							lineType = 'yellow-bus';\n						} else {\n							switch (lineType) {\n								case 'S':\n									lineType = 's-bus';\n									break;\n								case 'A':\n									lineType = 'a-bus';\n									break;\n								case 'E':\n									lineType = 'e-bus';\n									break;\n							}\n						}\n						connections[i].lineType = lineType;\n						time = connections[i].expectedDepartureDateTime;\n						mins = $moment(time).fromNow(true);\n						mins = parseInt(mins.split(' '));\n						if (regEx.test(mins) === true) {\n							connections[i].timeLeft = mins;\n						} else {\n							connections[i].timeLeft = 0;\n						}\n						break;\n					case 'S-TOG':\n						lineType = connections[i].lineDesignation.toLowerCase() + '-tog';\n						connections[i].lineType = lineType;\n						time = connections[i].expectedDepartureDateTime;\n						mins = $moment(time).fromNow(true);\n						regEx = new RegExp(/[0-9]/gi);\n						mins = parseInt(mins.split(' '));\n						if (regEx.test(mins) === true) {\n							connections[i].timeLeft = mins;\n						} else {\n							connections[i].timeLeft = 0;\n						}\n						break;\n					case 'METRO':\n						lineType = connections[i].lineDesignation.slice(connections[i].lineDesignation.length - 2);\n						connections[i].lineDesignation = lineType;\n						connections[i].lineType = lineType;\n						time = connections[i].expectedDepartureDateTime;\n						mins = $moment(time).fromNow(true);\n						regEx = new RegExp(/[0-9]/gi);\n						mins = parseInt(mins.split(' '));\n						if (regEx.test(mins) === true) {\n							connections[i].timeLeft = mins;\n						} else {\n\n							connections[i].timeLeft = 0;\n						}\n						break;\n					case 'TOG':\n						des = connections[i].lineDesignation;\n						l = des.split(' ');\n						lineType = l[0];\n						connections[i].lineDesignation = lineType;\n						connections[i].lineType = lineType.toLowerCase();\n						time = connections[i].expectedDepartureDateTime;\n						mins = $moment(time).fromNow(true);\n						regEx = new RegExp(/[0-9]/gi);\n						mins = parseInt(mins.split(' '));\n						if (regEx.test(mins) === true) {\n							connections[i].timeLeft = mins;\n						} else {\n							//console.log(mins);\n							connections[i].timeLeft = 0;\n						}\n						break;\n\n				}\n\n				out.push(connections[i]);\n			}\n\n		}\n		return out;\n	};\n})\n	.factory('getTransport',\n		function() {\n			var bus = true;\n			return {\n				returnTransport: function(transport) {\n					switch (transport) {\n						case 'BUS':\n							return bus;\n							break;\n						case 'S-TOG':\n\n							break;\n						case 'METRO':\n\n							break;\n						case 'TOG':\n\n							break;\n					};\n				}\n			};\n		}\n)\n	.controller('MainCtrl', ['$scope', '$interval', '$timeout', 'getBus', 'getTransport',\n\n		function($scope, $interval, $timeout, getBus, getTransport) {\n			var bus = '1156';\n			//1142\n			$scope.busInfo = {};\n			//to do: slide for multiple transport types\n\n			$scope.showBus = getTransport.returnTransport('BUS');\n			$scope.showStog = true;\n			$scope.showMetro = true;\n			$scope.showStog = true;\n\n			$scope.showThing = true;\n			$scope.displayTr = function() {\n				console.log($scope.showBus);\n			};\n\n			$scope.computeTransportType = function(connections, type) {\n				//console.log('fsdfsd  '+ $scope.showBus);\n				var n = 0;\n				if (!connections) {\n					return;\n				}\n				for (var i = 0; i < connections.length; i++) {\n					if (connections[i].transportType === type) {\n						n++;\n					}\n				}\n				/*\n			if (n === 0) {\n				//return false;\n			} else {\n				//return true;\n			}\n\n			switch (type) {\n				case 'BUS':\n					console.log('first' + $scope.showBus);\n					if (n === 0) {\n						return false;\n						console.log('n is 0');\n					} else {\n						if ($scope.showBus === true) {\n							console.log($scope.showBus);\n							console.log('shows');\n							return true;\n						} else {\n							console.log('should not show');\n							return false;\n						}\n					}\n					break;\n				case 'S-TOG':\n\n					break;\n				case 'METRO':\n\n					break;\n				case 'TOG':\n\n					break;\n			}\n\n*/\n\n			};\n\n			$scope.negTime = function(timeLeft) {\n				if (timeLeft < 0) {\n					console.log(timeLeft);\n					return true;\n				} else {\n					return false;\n				}\n			};\n\n			$interval(function() {\n\n				$scope.getOneBus = getBus.getBusInfo(bus)\n					.then(function(response) {\n						if (response.status === 200) {\n							$scope.busInfo = response.data;\n						} else {\n							console.log('Error occured' + response.status);\n						}\n\n					});\n				$scope.displayTr();\n			}, 5000);\n\n		}\n	]);",
+			">\n",
+			"toggleTransport",
+			" \n",
+			"\" \"",
+			" '));",
+			"limitTo:10",
+			"\"",
+			";\n",
+			"\">",
+			"col-xs-1",
+			"true",
+			"limitTo:8",
+			"Metro",
+			"1em",
+			"h3",
+			"makeStop",
+			"$scope.stopBus.go",
+			"$scope.stopBus",
+			"  >",
+			"if",
+			"type",
+			"inherit",
+			"    \n",
+			"bus",
+			"{bus",
+			"{\n",
+			"MainCtrl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"' '",
+			"limitTo:8",
+			"col-xs-2",
+			"limitTo:6",
+			"$scope.busStop",
+			"$scope.busInfo.stopBus",
+			"busInfo",
+			"{main.bus"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2410,
+								2410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 367.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2467,
+								2467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/services/getbus.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "movia.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

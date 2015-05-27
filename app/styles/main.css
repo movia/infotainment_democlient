@@ -1,0 +1,417 @@
+@font-face {
+	font-family: 'AtB Digital Bold';
+	src: url('../styles/fonts/AtBBold.ttf');
+}
+@font-face {
+	font-family: 'AtB Digital Regular';
+	src: url('../styles/fonts/AtBRegular.ttf');
+}
+@font-face {
+	font-family: 'AtB Digital Medium';
+	src: url('../styles/fonts/AtBMedium.ttf');
+}
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+body {
+	padding: 0;
+}
+.navbar{
+	margin-bottom: 0;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header, .marketing, .footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 19px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 40px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.main {
+	background-color: #ECE9E2;
+	color: #000;
+}
+.header-left {
+	position: relative;
+	margin-top: 5vh;
+}
+a#stopButton {
+	background-color: red;
+}
+.ng-show {
+	display: block !important;
+}
+.ng-hide {
+	display: none !important;
+}
+.transport-head {
+	display:block;
+	background-color: #e1ded7;
+}
+.head-dk {
+	font-size: 0.9em;
+	font-family: 'AtB Digital Bold';
+	display: block;
+}
+.head-en {
+	font-size: 0.8em;
+	font-family: 'AtB Digital Bold';
+	color: #88837d;
+	display: block;
+}
+.bus-line {
+	font-size: 1.3em;
+	padding: 5px;
+	font-family: 'AtB Digital Medium';
+}
+.bus-line:nth-child(even) {
+	background-color: #e1ded7;
+}
+.bus-line-4 {
+	font-size: 1.3em;
+	padding: 5px;
+	font-family: 'AtB Digital Medium';
+}
+.bus-line-4:nth-child(even){
+	float:left;
+}
+
+h2 {
+	font-size: 3em;
+	font-family: 'AtB Digital Medium';
+}
+h3 {
+	font-size: 2em;
+	font-family: 'AtB Digital Medium';
+}
+h4 {
+	font-size: 1.5em;
+	font-family: 'AtB Digital Medium';
+}
+h5 {
+	font-size: 1.3em;
+	font-family: 'AtB Digital Medium';
+	color: #88837d;
+}
+.col-xs-1 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.col-xs-2 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.col-md-10 {
+	padding: 0;
+}
+.connection-dest {
+	text-align: center; 
+	font-size: 0.8em;
+	font-family: 'AtB Digital Regular';
+}
+.transContainer {
+	height: 80vh;
+	display: block;
+	overflow: hidden;
+}
+.transContainerSmall{
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+.dis4head{
+	margin-right:5px;
+}
+
+.train-line {
+	text-align: center;
+	padding: 0;
+	width: 5%;
+	font-size: 0.8em;
+	font-family: 'AtB Digital Regular';
+}
+.metro-line {
+	text-align: center;
+	padding: 0;
+}
+.a-bus {
+	background-color: #B8211C;
+	color: #FFF;
+}
+.s-bus, .r-bus {
+	padding: 0;
+	background-color: #0065AA;
+	color: #FFF;
+}
+.e-bus {
+	padding: 0;
+	background-color: #00B26B;
+	color: #FFF;
+}
+.yellow-bus {
+	background-color: #FDAE00;
+}
+.ABUS, .NBUS{
+	background-color: #B8211C;
+	color: #FFF;
+}
+.SBUS, .RNET{
+	padding: 0;
+	background-color: #0065AA;
+	color: #FFF;
+}
+.EBUS{
+	padding: 0;
+	background-color: #00B26B;
+	color: #FFF;
+}
+.ALM{
+	background-color: #FDAE00;
+}
+.a-tog {
+	background-color: #00B2EF;
+	color: #FFF;
+}
+.b-tog {
+	background-color: #56B848;
+	color: #FFF;
+}
+.c-tog {
+	background-color: #F58A1F;
+	color: #FFF;
+}
+.e-tog {
+	background-color: #7670B2;
+	color: #FFF;
+}
+.f-tog {
+	background-color: #FFC20E;
+	color: #FFF;
+}
+.h-tog {
+	background-color: #EF4130;
+	color: #FFF;
+}
+.M1 {
+	width: 30px;
+	height: 30px;
+	padding-top: 4px;
+	font-family: 'AtB Digital Bold';
+	font-size: 0.8em;
+	background-color: #008265;
+	border-radius: 50%;
+	color: #FFF;
+}
+.M2 {
+	width: 30px;
+	height: 30px;
+	padding-top: 4px;
+	font-family: 'AtB Digital Bold';
+	font-size: 0.8em;
+	background-color: #FFC425;
+	border-radius: 50%;
+}
+.icl {
+	background-color: #FDBA58;
+	color: #FFF;
+}
+.re, .ør {
+	background-color: #50B748;
+	color: #FFF;
+}
+.ic, .ice {
+	background-color: #EF4130;
+	color: #FFF;
+}
+.activeTransport {
+	background-color: #FDAE00 !important;
+}
+ 
+#stop-sign {
+	background-color: red;
+	padding-top: 5vh;
+	color: white;
+	width: 100%;
+	height: 25%;
+	font-size: 4em;
+}
+p#stop{
+	font-family: 'AtB Digital Bold';
+	color:#FFF;
+}
+#dot-logo {
+	width: 100%;
+	height: 25%;
+	display: block;
+	background-color: #666;
+	padding-top: 5vh;
+	color: #FFF;
+	font-size: 4em;
+}
+input[type="text"]{
+	font-family: 'AtB Digital Regular';
+}
+button.btn{
+	padding:7px;
+	font-family: 'AtB Digital Regular';
+}
+input#busNumber{
+	height:35px; 
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FDAE00;
+
+}
+img.navbar-image{
+	width:2em;
+	height:2em;
+}
+.transport-head-image{
+	width:50px;
+	height: 50px;
+}
+.nav > li > a{
+	padding:5px;
+}
+form.bus-number{
+	padding-top: 10px;
+}
+img.replacement-image{
+	width: 100%;
+}
+.track{
+	padding-left:5px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width:48em) {
+	img.navbar-image{
+	width:4em;
+	height:4em;
+	}
+	.main{
+		height: 90vh;
+		overflow-y: hidden;
+	}
+	.display-head {
+		max-height: 23vh;
+		border-bottom: 2px solid black;
+	}
+	.left-panel {
+		border-right: 2px solid black;
+		display: block;
+		height: 80vh;
+		font-size: 1.1em;
+		padding: 0;
+	}
+	.container {
+		max-width: 1366px;
+		max-height: 768px;
+	}
+	.main {
+		overflow: hidden;
+	}
+
+	/* Remove the padding we set earlier */
+	.header, .marketing, .footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Space out the masthead */
+	.header {
+	}
+
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+@media screen and (max-width:48em) {
+	h2{
+		font-size: 2.5em;
+	}
+	.col-xs-3, .col-xs-9, .col-xs-12 {
+		padding: 0;
+	}
+	.col-xs-12 {
+		padding-left:5px;
+	}
+	button.navbar-toggle{
+		margin:0;
+		margin-top:3px;
+		margin-right:3px;
+	}
+	.transContainer{
+		height: 100%;
+		display: block;
+		position:relative;
+	}
+	.display-head {
+		display:block;
+		position:relative;
+		height: 100%;
+	}	
+	ul.nav>li>a{
+		display: block;
+		float:left;
+		margin-top:3px;
+		padding:5px;
+	}
+	.header{
+		width: 100%;
+		padding:0;
+	}
+	.navbar-nav{
+		margin:0;
+	}
+ 
+	form.bus-number{
+		width:100%;
+	}
+	input[type="text"]{
+
+	}
+	.connection-dest{
+
+		font-size: 0.7em;
+	}
+}

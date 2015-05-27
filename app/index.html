@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="moviabusApp">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="header" ng-hide="false">
+      <div class="navbar navbar-default" role="navigation" ng-controller="MainCtrl">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">movia</a>
+            <!-- menu used to toggle between transport types -->
+            <ul class="nav navbar-nav" >
+              <li class="" ><a href="#/" ng-click="toggle('BUS')" ng-class="{activeTransport:showBus}"><img class="navbar-image" src="images/bus.png"></a></li>
+              <li class="" ><a href="#/" ng-click="toggle('S-TOG')" ng-class="{activeTransport:showStog}"><img class="navbar-image" src="images/stog.png"></a></li>
+              <li class="" ><a href="#/" ng-click="toggle('METRO')" ng-class="{activeTransport:showMetro}"><img class="navbar-image" src="images/metro.png"></a></li>
+              <li class="" ><a href="#/" ng-click="toggle('TOG')" ng-class="{activeTransport:showTog}"><img class="navbar-image" src="images/tog.png"></a></li>
+            </ul>
+          </div>
+          <!-- search form to ask for another bus' connections 
+          for display purpose, this is set to 8478 in the main controller -->
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" >
+            <form class="pull-right bus-number" class="">
+              <div class="form-group col-xs-12 col-md-12">
+                <input class="col-xs-9 col-md-8" type="text" id="busNumber" ng-model="newBus" placeholder="bus no.">
+                <button   type="submit" class="col-xs-3 btn btn-success" ng-click="searchNew()">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div ng-view=""></div>
+    </div>
+    <!--
+    <div class="footer">
+      <div class="container">
+        <p>Movia</p>
+      </div>
+    </div>
+    -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
+    <script src="bower_components/angular-toArrayFilter/toArrayFilter.js"></script>
+    <script src="bower_components/angular-momentjs/angular-momentjs.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/services/getbus.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
