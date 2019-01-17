@@ -16,6 +16,7 @@ angular.module('moviabusApp')
           var req = {
             method: 'GET',
             url: env.apiBaseUrl + '?url=' + encodeURIComponent('/infotainment/v3/vehicle/' + busNumber + '/2?includeNextStops=3'),
+            // url: env.apiBaseUrl + '/infotainment/v3/vehicle/' + busNumber + '/2?includeNextStops=3',
             headers: {
               'Authorization': 'Basic ' + btoa(env.apiUser+':'+env.apiPassword)
             }

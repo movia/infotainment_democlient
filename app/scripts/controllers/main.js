@@ -340,12 +340,25 @@ angular.module('moviabusApp')
         window.rotateItems = rotateItems;
 
         var rotateInterval = function() {
-          window.showRotateItems = window.rotateItems.slice(window.rotateCount, (window.rotateCount+2));
+          // Always show bus when 3 rotateitems
+          var busIndex = window.rotateItems.indexOf('BUS');
+          if (window.rotateItems.length === 3 && busIndex !== -1) {
+            var withoutBus = Array.from(window.rotateItems);
+            withoutBus.splice(busIndex, 1);
 
-          window.rotateCount += 2;
-          if ((window.rotateCount+1) > window.rotateItems.length) {
-            window.rotateCount = 0;
+            window.showRotateItems = ['BUS', withoutBus[window.rotateCount]];
+            window.rotateCount += 1;
+            if (window.rotateCount >= withoutBus.length) {
+              window.rotateCount = 0;
+            }
+          } else {
+            window.showRotateItems = window.rotateItems.slice(window.rotateCount, (window.rotateCount+2));
+            window.rotateCount += 2;
+            if ((window.rotateCount+1) > window.rotateItems.length) {
+              window.rotateCount = 0;
+            }
           }
+
         };
 
         rotateInterval();
