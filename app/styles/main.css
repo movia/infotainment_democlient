@@ -71,7 +71,19 @@ body {
 }
 .header-left {
 	position: relative;
-	margin-top: 5vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+.header-left h3 {
+	margin-bottom: 1px;
+}
+.header-left h4 {
+  margin-top: 1px;
+	color: #88837d;
+}
+.display-head h1 {
+  margin-top: 3.7vh;
+  font-size: 4.5em;
 }
 a#stopButton {
 	background-color: red;
@@ -99,7 +111,10 @@ a#stopButton {
 }
 .bus-line {
 	font-size: 1.3em;
-	padding: 5px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
 	font-family: 'AtB Digital Medium';
 }
 .bus-line:nth-child(even) {
@@ -143,19 +158,38 @@ h5 {
 	padding: 0;
 }
 .connection-dest {
-	text-align: center; 
+	text-align: center;
 	font-size: 0.8em;
 	font-family: 'AtB Digital Regular';
 }
+.full-width {
+  width: 100%;
+}
 .transContainer {
-	height: 80vh;
+  height: 80vh;
 	display: block;
-	overflow: hidden;
+  overflow: hidden;
+  padding: 5px;
+}
+.transContainer:first-of-type {
+  border-right: 2px solid black;
+}
+.transContainer h3 {
+  margin-top: 0.2em;
+}
+.transContainer h3 .transport-head-image {
+  margin-right: 0.6em;
+}
+.transContainer h3 span.grey {
+  font-size: 0.8em;
 }
 .transContainerSmall{
 	height: 100%;
 	display: block;
 	overflow: hidden;
+}
+.no-padding {
+  padding: 0;
 }
 .dis4head{
 	margin-right:5px;
@@ -164,9 +198,10 @@ h5 {
 .train-line {
 	text-align: center;
 	padding: 0;
-	width: 5%;
+	width: 25px;
 	font-size: 0.8em;
-	font-family: 'AtB Digital Regular';
+  font-family: 'AtB Digital Regular';
+  margin-top: 3px;
 }
 .metro-line {
 	text-align: center;
@@ -188,6 +223,10 @@ h5 {
 }
 .yellow-bus {
 	background-color: #FDAE00;
+}
+.HAVNEBUS {
+	background-color: #1A4F6C;
+	color: #FFF;
 }
 .ABUS, .NBUS{
 	background-color: #B8211C;
@@ -264,7 +303,9 @@ h5 {
 .activeTransport {
 	background-color: #FDAE00 !important;
 }
- 
+
+
+
 #stop-sign {
 	background-color: red;
 	padding-top: 5vh;
@@ -281,10 +322,16 @@ p#stop{
 	width: 100%;
 	height: 25%;
 	display: block;
-	background-color: #666;
+	background-color: #324191;
 	padding-top: 5vh;
 	color: #FFF;
 	font-size: 4em;
+}
+.grey {
+  color: #88837d;
+}
+.red {
+  color: red;
 }
 input[type="text"]{
 	font-family: 'AtB Digital Regular';
@@ -294,7 +341,7 @@ button.btn{
 	font-family: 'AtB Digital Regular';
 }
 input#busNumber{
-	height:35px; 
+	height:35px;
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 2px;
@@ -320,6 +367,106 @@ img.replacement-image{
 }
 .track{
 	padding-left:5px;
+}
+.vertical-line {
+  width: 8px;
+  background-color: #88837d;
+  display: inline-block;
+  height: 100%;
+}
+.next-stops .stop-line {
+  padding-left: 0;
+  padding-right: 0;
+  height: 130px;
+}
+.next-stops .stop-line.next {
+  font-size: 1.15em;
+}
+.next-stops .stop-line h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.next-stops .stop-line > div {
+  height: 100%;
+}
+.next-stops .stop-line:last-of-type {
+  height: 40px;
+}
+.next-stops .arrowhead {
+  width: 20px;
+}
+.next-stops .connections {
+  max-width: 300px;
+  display: inline-block;
+}
+.next-stops .connection {
+  display: inline-block !important;
+  width: 42px;
+  height: 21px;
+  margin: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+.next-stops .connection > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block !important;
+}
+.next-stops .connection-line {
+  width: 46px;
+  height: 46px;
+  margin-right: -8px;
+  display: inline-block;
+}
+.stop-marker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid #88837d;
+}
+.next .stop-marker {
+  border: 4px solid red;
+  width: 24px;
+  height: 24px;
+}
+.headline-wrapper {
+  overflow:hidden;
+}
+.marquee h1 {
+  animation: scroll-right-left 5s linear infinite;
+  white-space: nowrap;
+}
+@keyframes scroll-right-left {
+  from {
+      transform: translateX(400px);
+  }
+  to {
+      transform: translateX(-100px);
+  }
+}
+.deviation-message {
+  background-color: #88837d;
+  text-align: center;
+  height: 550px;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.deviation-message h1 {
+  font-size: 5em;
+}
+.deviation-message h3 {
+  font-size: 2.5em;
+}
+.display-block-desktop {
+  display: none;
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width:48em) {
@@ -363,7 +510,10 @@ img.replacement-image{
 	/* Remove the bottom border on the jumbotron for visual effect */
 	.jumbotron {
 		border-bottom: 0;
-	}
+  }
+  .display-block-desktop {
+    display: block;
+  }
 }
 @media screen and (max-width:48em) {
 	h2{
@@ -389,7 +539,11 @@ img.replacement-image{
 		display:block;
 		position:relative;
 		height: 100%;
-	}	
+  }
+  .display-head h1 {
+    font-size: 3.2em;
+    margin-top: 4.5vh;
+  }
 	ul.nav>li>a{
 		display: block;
 		float:left;
@@ -403,7 +557,7 @@ img.replacement-image{
 	.navbar-nav{
 		margin:0;
 	}
- 
+
 	form.bus-number{
 		width:100%;
 	}
@@ -411,7 +565,12 @@ img.replacement-image{
 
 	}
 	.connection-dest{
-
 		font-size: 0.7em;
-	}
+  }
+  .next-stops .stop-line {
+    min-height: 90px;
+  }
+  .next-stops .stop-line h3 {
+    margin-top: 5px;
+  }
 }

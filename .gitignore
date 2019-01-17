@@ -1,5 +1,9 @@
 node_modules
 dist
+public
 .tmp
 .sass-cache
 bower_components
+.env
+phpproxy/src/vendor
+app/config.js

@@ -1,0 +1,5 @@
+env = {
+  "apiBaseUrl": "http://mockup.moviatrafik.dk/proxy/",
+  "apiUser": "",
+  "apiPassword": ""
+};
