@@ -11,7 +11,7 @@
 			<div ng-show="busInfo.displayMode==2||busInfo.displayMode==4||busInfo.displayMode==5" class="col-xs-9 col-md-10 headline-wrapper" ng-class="(busInfo.nextStops[0].stopPoint.name.length > 27 ? 'marquee' : '')">
 				<h1>{{busInfo.nextStops[0].stopPoint.name}}</h1>
 			</div>
-			<div ng-show="busInfo.displayMode==3" class="col-xs-9 col-md-10" ng-class="(busInfo.nextStops[0].stopPoint.name.length > 27 ? 'marquee' : '')">
+			<div ng-show="busInfo.displayMode==3" class="col-xs-9 col-md-10" ng-class="(busInfo.finalStop.stopPoint.name.length > 27 ? 'marquee' : '')">
 				<h1>{{busInfo.finalStop.stopPoint.name}}</h1>
 			</div>
 		</div>
