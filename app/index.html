@@ -22,7 +22,7 @@
     <!-- Add your site or application content here -->
     <div class="header" ng-hide="false">
       <div class="navbar navbar-default" role="navigation" ng-controller="MainCtrl">
-        <div class="container">
+        <div class="container no-padding-desktop">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -30,7 +30,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/">movia</a>
             <!-- menu used to toggle between transport types -->
             <ul class="nav navbar-nav" >
               <li class="" ><a href="#/" ng-click="toggle('BUS')" ng-class="{activeTransport:showBus}"><img class="navbar-image" src="images/bus.png"></a></li>

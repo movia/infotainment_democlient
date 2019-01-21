@@ -483,6 +483,9 @@ img.replacement-image{
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width:48em) {
+  .no-padding-desktop {
+    padding: 0;
+  }
 	img.navbar-image{
 	width:4em;
 	height:4em;

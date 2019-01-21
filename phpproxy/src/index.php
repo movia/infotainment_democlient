@@ -29,7 +29,7 @@ if ($request->getMethod() === 'OPTIONS') {
   exit;
 }
 
-// getTestResponse(6);
+// getTestResponse(7);
 
 // Forward the request and get the response.
 $response = $proxy->forward($request)->to('https://wsilb.moviatrafik.dk' . urldecode($_GET['url']));
