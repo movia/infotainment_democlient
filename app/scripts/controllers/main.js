@@ -47,6 +47,10 @@ angular.module('moviabusApp')
 						connections[i].lineDesignation = lineType;
 						connections[i].lineType = lineType.toLowerCase();
 						break;
+          case 'LOKALTOG':
+						lineType = connections[i].lineDesignation.slice(connections[i].lineDesignation.length - 1) + '-tog';
+						connections[i].lineType = lineType.toLowerCase();
+						break;
 				}
 				out.push(connections[i]);
 			}
@@ -82,6 +86,7 @@ angular.module('moviabusApp')
 			var stog = true;
 			var metro = true;
 			var tog = true;
+			var lokaltog = true;
 			return {
 				toggleTransport: function(transport) {
 					switch (transport) {
@@ -97,6 +102,9 @@ angular.module('moviabusApp')
 						case 'TOG':
 							tog = !tog;
 							break;
+						case 'LOKALTOG':
+							lokaltog = !lokaltog;
+							break;
 					}
 				},
 				returnTransport: function(transport) {
@@ -109,6 +117,8 @@ angular.module('moviabusApp')
 							return metro;
 						case 'TOG':
 							return tog;
+						case 'LOKALTOG':
+							return lokaltog;
 					}
 				}
 			};
@@ -154,6 +164,7 @@ angular.module('moviabusApp')
 			$scope.showStog = getTransport.returnTransport('S-TOG');
 			$scope.showMetro = getTransport.returnTransport('METRO');
 			$scope.showTog = getTransport.returnTransport('TOG');
+			$scope.showLokaltog = getTransport.returnTransport('LOKALTOG');
       $scope.newBus = '';
 
 			//function used for styling connections
@@ -189,7 +200,16 @@ angular.module('moviabusApp')
           var difference = then.diff($moment(), 'minutes');
 
           return difference;
-			};
+      };
+      /**
+       * Is track changed
+       *
+       * @param {object} connection
+       * @return {bool}
+       */
+      $scope.changedTrack = function(connection) {
+        return typeof connection.plannedTrack !== 'undefined' && connection.plannedTrack != connection.track;
+      }
 			//toggles transport types
 			$scope.toggle = function(transport) {
 				getTransport.toggleTransport(transport);
@@ -205,6 +225,9 @@ angular.module('moviabusApp')
 						break;
 					case 'TOG':
 						$scope.showTog = getTransport.returnTransport('TOG');
+						break;
+					case 'LOKALTOG':
+						$scope.showLokaltog = getTransport.returnTransport('LOKALTOG');
 						break;
         }
 
@@ -240,8 +263,9 @@ angular.module('moviabusApp')
         var STOG = $scope.computeTransportModeCode(connections, 'S-TOG') && (typeof window.rotateItems === "undefined" || window.rotateItems.indexOf('BUS') !== -1);
         var METRO = $scope.computeTransportModeCode(connections, 'METRO') && (typeof window.rotateItems === "undefined" || window.rotateItems.indexOf('BUS') !== -1);
         var TOG = $scope.computeTransportModeCode(connections, 'TOG') && (typeof window.rotateItems === "undefined" || window.rotateItems.indexOf('BUS') !== -1);
+        var LOKALTOG = $scope.computeTransportModeCode(connections, 'LOKALTOG') && (typeof window.rotateItems === "undefined" || window.rotateItems.indexOf('LOKALBUS') !== -1);
 
-        var activated = [BUS,STOG,METRO,TOG].filter(Boolean).length;
+        var activated = [BUS,STOG,METRO,TOG,LOKALTOG].filter(Boolean).length;
 
         return activated;
       };
@@ -252,6 +276,7 @@ angular.module('moviabusApp')
 				$scope.showStog = getTransport.returnTransport('S-TOG');
 				$scope.showMetro = getTransport.returnTransport('METRO');
 				$scope.showTog = getTransport.returnTransport('TOG');
+				$scope.showLokaltog = getTransport.returnTransport('LOKALTOG');
 				var n = 0;
 				if (!connections) {
 					return;
@@ -300,6 +325,17 @@ angular.module('moviabusApp')
 							return false;
 						} else {
 							if ($scope.showTog === true) {
+								return true;
+							} else {
+								return false;
+							}
+						}
+						break;
+					case 'LOKALTOG':
+						if (n === 0) {
+							return false;
+						} else {
+							if ($scope.showLokaltog === true) {
 								return true;
 							} else {
 								return false;
@@ -373,6 +409,7 @@ angular.module('moviabusApp')
       $scope.stopRotateFullConnectionView = function() {
         window.rotating = false;
         window.showRotateItems = [];
+        delete window.rotateItems;
         $interval.cancel(window.rotateInterval);
       };
 

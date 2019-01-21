@@ -237,6 +237,11 @@ h5 {
 	background-color: #0065AA;
 	color: #FFF;
 }
+.CBUS{
+	padding: 0;
+	background-color: #00A5CC;
+	color: #FFF;
+}
 .EBUS{
 	padding: 0;
 	background-color: #00B26B;
@@ -266,6 +271,14 @@ h5 {
 	color: #FFF;
 }
 .h-tog {
+	background-color: #EF4130;
+	color: #FFF;
+}
+.r-tog {
+	background-color: #50B748;
+	color: #FFF;
+}
+.lokal-tog {
 	background-color: #EF4130;
 	color: #FFF;
 }

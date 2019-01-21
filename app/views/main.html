@@ -68,6 +68,7 @@
                 <img class="connection-line" src="images/stog.png" ng-show="hasTransportType(nextStop.connections, 'S-TOG')">
                 <img class="connection-line" src="images/metro.png" ng-show="hasTransportType(nextStop.connections, 'METRO')">
                 <img class="connection-line" src="images/tog.png" ng-show="hasTransportType(nextStop.connections, 'TOG')">
+                <img class="connection-line" src="images/lokaltog.png" ng-show="hasTransportType(nextStop.connections, 'LOKALTOG')">
                 <div class="clearfix"></div>
               </div>
             </div>
@@ -174,10 +175,10 @@
               <div class="col-xs-1">
                 <div ng-class="connection.lineType" class="train-line text-center">{{connection.lineDesignation}}</div>
               </div>
-              <div class="connection-line  pull-left col-xs-7">{{connection.primaryDestination}}<span ng-if="connection.secondaryDestination">, {{connection.secondaryDestination}}</span><span ng-if="connection.plannedDepartureDateTime" class="red"><br>Forsinket</span></div>
+              <div class="connection-line  pull-left col-xs-7">{{connection.primaryDestination}}<span ng-if="connection.secondaryDestination">, {{connection.secondaryDestination}}</span><span ng-if="connection.plannedDepartureDateTime" class="red"><br>Forsinket</span><span ng-if="changedTrack(connection)" class="red"><br>Sporændring</span></div>
               <span class="col-xs-2 text-right" ng-hide="negTime(connection.timeLeft)" >{{connection.timeLeft}}<span ng-if="connection.plannedDepartureDateTime" class="red"><br>{{ connection.delayedMinutes }}</span></span>
               <span class="col-xs-2 text-right" ng-show="negTime(connection.timeLeft)" >Nu</span>
-              <span class="col-xs-2 text-right track">{{connection.track}}</span>
+              <div class="col-xs-2 text-right track"><span ng-if="changedTrack(connection)">{{connection.plannedTrack}}<br></span> <span ng-class="(changedTrack(connection) ? 'red' : '')">{{connection.track}}</span></div>
             </div>
           </div>
           <!-- METRO -->
@@ -222,9 +223,30 @@
             </div>
             <div class="col-xs-12 bus-line" ng-repeat="connection in busInfo.nextStops[0].connections | checkType:'TOG' | orderBy:'expectedDepartureDateTime' | limitTo:8">
               <div ng-class="connection.lineType" class="connection-dest pull-left col-xs-1 text-center">{{connection.lineDesignation}}</div>
-              <div class="connection-line  pull-left col-xs-8">{{connection.primaryDestination}}<span ng-if="connection.secondaryDestination">, {{connection.secondaryDestination}}</span><span ng-if="connection.plannedDepartureDateTime" class="red"><br>Forsinket</span></div>
+              <div class="connection-line  pull-left col-xs-8">{{connection.primaryDestination}}<span ng-if="connection.secondaryDestination">, {{connection.secondaryDestination}}</span><span ng-if="connection.plannedDepartureDateTime" class="red"><br>Forsinket</span><span ng-if="changedTrack(connection)" class="red"><br>Sporændring</span></div>
               <div class="col-xs-2"><span ng-if="connection.plannedDepartureDateTime">{{connection.plannedDepartureDateTime | amDateFormat:'HH:mm' }}<br></span> <span ng-class="(connection.plannedDepartureDateTime ? 'red' : '')">{{connection.expectedDepartureDateTime | amDateFormat:'HH:mm' }}</span></div>
-              <span class="col-xs-1 text-right track">{{connection.track}}</span>
+              <div class="col-xs-1 text-right track"><span ng-if="changedTrack(connection)">{{connection.plannedTrack}}<br></span> <span ng-class="(changedTrack(connection) ? 'red' : '')">{{connection.track}}</span></div>
+            </div>
+          </div>
+          <!-- LOKALTOG -->
+          <div class="trains col-xs-12 col-md-6 transContainer" ng-show="computeTransportModeCode(busInfo.nextStops[0].connections, 'LOKALTOG') && showRotateItem('LOKALTOG')" ng-class="(transportModeCount(busInfo.nextStops[0].connections)===1?'full-width':'')">
+            <h3><img class="transport-head-image" src="images/tog.png">Lokaltog <span class="grey">Local train</span></h3>
+            <div class="transport-head">
+              <div class="col-xs-12 head-dk transport-head">
+                <span class="col-xs-1">Linje</span>
+                <span class="col-xs-9">Til</span>
+                <span class="col-xs-2 ">Afgang</span>
+              </div>
+              <div class="col-xs-12 head-en transport-head">
+                <span class="col-xs-1">Line</span>
+                <span class="col-xs-9">To</span>
+                <span class="col-xs-2 ">Departure</span>
+              </div>
+            </div>
+            <div class="col-xs-12 bus-line" ng-repeat="connection in busInfo.nextStops[0].connections | checkType:'LOKALTOG' | orderBy:'expectedDepartureDateTime' | limitTo:8">
+              <div ng-class="connection.lineType" class="connection-dest pull-left col-xs-1 text-center">{{connection.lineDesignation}}</div>
+              <div class="connection-line  pull-left col-xs-9">{{connection.primaryDestination}}<span ng-if="connection.secondaryDestination">, {{connection.secondaryDestination}}</span><span ng-if="connection.plannedDepartureDateTime" class="red"><br>Forsinket</span></div>
+              <div class="col-xs-2"><span ng-if="connection.plannedDepartureDateTime">{{connection.plannedDepartureDateTime | amDateFormat:'HH:mm' }}<br></span> <span ng-class="(connection.plannedDepartureDateTime ? 'red' : '')">{{connection.expectedDepartureDateTime | amDateFormat:'HH:mm' }}</span></div>
             </div>
           </div>
         </div>
