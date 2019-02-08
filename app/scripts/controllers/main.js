@@ -449,14 +449,15 @@ angular.module('moviabusApp')
             for (var c = 0; c < window.deviationMessages.length; c++) {
               var deviationMessage = window.deviationMessages[c];
 
-              var initiateMessageInterval = function (deviationMessage) {
-                var showMessage = function (deviationMessage) {
-                  window.deviationMessage = deviationMessage;
+              var showMessage = function (deviationMessage) {
+                window.deviationMessage = deviationMessage;
 
-                  $timeout(function () {
-                    window.deviationMessage = null;
-                  }, 20000);
-                };
+                $timeout(function () {
+                  window.deviationMessage = null;
+                }, 20000);
+              };
+
+              var initiateMessageInterval = function (deviationMessage) {
 
                 // Fire right away
                 showMessage(deviationMessage);
@@ -468,7 +469,7 @@ angular.module('moviabusApp')
                   window.deviationMessageIntervals = [];
                 }
 
-                var interval = $interval(showMessage(deviationMessage), intervalTime);
+                var interval = $interval(showMessage.bind(null, deviationMessage), intervalTime);
                 window.deviationMessageIntervals.push(interval);
               };
 
